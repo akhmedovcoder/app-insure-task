@@ -37,16 +37,27 @@ nav{
   font-family: 'Karla', sans-serif;
   text-decoration: none;
   color: #837D88;
+  transition: 0.1s;
+}
+
+.nav__item:hover{
+  color: #2C2830;
 }
 
 .nav__btn{
   font-size: 13px;
   font-weight: 700;
   padding: 12.5px 28.5px;
-  border: 2px solid #2C2830;
+  border: 1.5px solid #2C2830;
   text-decoration: none;
   font-family: 'Karla', sans-serif;
   color: #2C2830;
+  transition: 0.2s;
+}
+
+.nav__btn:hover{
+  background: #2C2830;
+  color: #FFFFFF;
 }
 
 
@@ -99,11 +110,17 @@ nav{
   font-size: 13px;
   font-weight: 700;
   color: #FFFFFF;
-  border: 2px solid #FFFFFF;
+  border: 1.5px solid #FFFFFF;
   letter-spacing: 1.5px;
   padding: 12.5px 28.5px;
   text-decoration: none;
   font-family: 'Karla', sans-serif;
+  transition: 0.2s;
+}
+
+.header__text-btn:hover{
+  color: #2C2830;
+  background: #FFFFFF;
 }
 
 .header__section-img{
@@ -244,5 +261,108 @@ article::after{
   font-family: 'Karla', sans-serif;
   align-items: center;
   padding: 12.5px 24.5px;
+  transition: 0.2s;
   z-index: 2;
+}
+
+.article__btn a:hover{
+  background: #fff;
+  color: #2C2830;
+}
+
+
+
+
+
+/* FOOTER SECTION */
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  background: #FAFAFA;
+  padding: 65.5px 165px;
+}
+
+footer::before{
+  content: url(/images/footer-bg.svg);
+  position: absolute;
+  margin-left: -10.3rem;
+  margin-top: -4rem;
+  z-index: 1;
+}
+
+.footer__nav{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid #DADADA;
+  padding-bottom: 36px;
+  z-index: 2;
+}
+
+.footer__nav-logo{
+  width: 111px;
+  height: 18px;
+}
+
+.footer__nav-icon{
+  width: 144px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer__nav-icon i{
+  align-items: center;
+  font-size: 28px;
+  color: #837D88;
+  transition: 0.2s;
+}
+
+.footer__nav-icon i:hover{
+  color: #2C2830;
+}
+
+.footer__section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__links{
+  margin-top: 48px;
+}
+
+.footer__links-title{
+  font-size: 13px;
+  font-weight: 700;
+  color: #837D88;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.footer__list{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.footer__list li{
+  margin-top: 16px;
+}
+
+.footer__item{
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  font-family: 'Karla', sans-serif;
+  color: #2D2641;
+  transition: 0.3s;
+}
+
+.footer__item:hover{
+  border-bottom: 1px solid #2D2641;
 }
