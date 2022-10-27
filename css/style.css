@@ -126,7 +126,12 @@ nav{
 /* FIRST SECTION */
 
 
-.first
+.first__section::before{
+  content: url(/images/first-section-bg.svg);
+  position: absolute;
+  margin-top: -31rem;
+  margin-left: -10.5rem;
+}
 
 .first__section{
   padding: 150px 165px 0px;
